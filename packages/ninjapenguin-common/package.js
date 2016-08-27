@@ -1,5 +1,5 @@
 Package.describe({
-  name: "my-custom-package"
+  name: "ninjapenguin-common"
 });
 
 Package.onUse( function(api) {

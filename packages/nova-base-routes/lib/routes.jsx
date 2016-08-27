@@ -18,7 +18,6 @@ Meteor.startup(() => {
     {name:"users.single",   path:"users/:slug",        component:Telescope.components.UsersSingle},
     {name:"users.account",  path:"account",            component:Telescope.components.UsersAccount},
     {name:"users.edit",     path:"users/:slug/edit",   component:Telescope.components.UsersAccount},
-    // {name:"contact",        path:"contactUs",          component:Telescope.components.}
   ]);
 
   const AppRoutes = {

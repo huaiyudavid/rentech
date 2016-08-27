@@ -11,3 +11,4 @@ Telescope.components.Newsletter = CustomNewsletter;
 Telescope.components.PostsItem = CustomPostsItem;
 
 Telescope.components.Footer = CustomFooter;
+Telescope.components.
