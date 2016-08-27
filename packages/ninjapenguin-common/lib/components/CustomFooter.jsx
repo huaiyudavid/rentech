@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl';
 
 const CustomFooter = props => {
   return (
-    <div className="footer"><a href={Telescope.utils.getSiteUrl() + "/contactUs"} target="_blank"><FormattedMessage id="contactUs"/></a></div>
+    <div className="footer"><a href={Telescope.utils.getSiteUrl() + "/contactUs"}><FormattedMessage id="contactUs"/></a></div>
   )
 }
 
