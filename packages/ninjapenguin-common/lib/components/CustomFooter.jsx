@@ -7,8 +7,4 @@ const CustomFooter = props => {
   )
 }
 
-Footer.displayName = "Footer";
-
-module.exports = Footer;
-
 export default CustomFooter;
