@@ -2,12 +2,12 @@ import React from 'react';
 
 const ContactUs = () => {
   var headerStyle = {
-    font-family:century gothic,
+    fontFamily:century gothic,
     color: #004DE6
   };
 
   var bodyStyle = {
-    font-family:century gothic,
+    fontFamily:century gothic,
     color: #808080
   };
 
