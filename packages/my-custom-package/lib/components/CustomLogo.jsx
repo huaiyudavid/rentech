@@ -1,7 +1,7 @@
 /*
 The original Logo components is defined using React's
 functional stateless component syntax, so we redefine
-it the same way. 
+it the same way.
 */
 
 import React from 'react';
