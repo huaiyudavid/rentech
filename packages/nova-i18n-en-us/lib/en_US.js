@@ -126,4 +126,6 @@ Telescope.strings.en = {
 
   "admin": "Admin",
   "notifications": "Notifications",
+
+  "contactUs": "Contact Us",
 }
