@@ -2,13 +2,13 @@ import React from 'react';
 
 const ContactUs = () => {
   var headerStyle = {
-    fontFamily:century gothic,
-    color: #004DE6
+    fontFamily: "century gothic",
+    color: "#004DE6"
   };
 
   var bodyStyle = {
-    fontFamily:century gothic,
-    color: #808080
+    fontFamily: "century gothic",
+    color: "#808080"
   };
 
   return (
