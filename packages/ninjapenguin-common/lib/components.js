@@ -9,3 +9,5 @@ import CustomPostsItem from "./components/CustomPostsItem.jsx";
 Telescope.components.Logo = CustomLogo;
 Telescope.components.Newsletter = CustomNewsletter;
 Telescope.components.PostsItem = CustomPostsItem;
+
+Telescope.components.Footer = CustomFooter;

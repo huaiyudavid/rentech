@@ -5,7 +5,7 @@ import { IndexRoute, Route, useRouterHistory, browserHistory, createMemoryHistor
 import { ReactRouterSSR } from 'meteor/reactrouter:react-router-ssr';
 import { ListContainer, DocumentContainer } from "meteor/utilities:react-list-container";
 // import useNamedRoutes from 'use-named-routes';
-import createBrowserHistory from 'history/lib/createBrowserHistory';
+// import createBrowserHistory from 'history/lib/createBrowserHistory';
 import Events from "meteor/nova:events";
 import Helmet from 'react-helmet';
 
@@ -17,7 +17,8 @@ Meteor.startup(() => {
     {name:"posts.single",   path:"posts/:_id(/:slug)", component:Telescope.components.PostsSingle},
     {name:"users.single",   path:"users/:slug",        component:Telescope.components.UsersSingle},
     {name:"users.account",  path:"account",            component:Telescope.components.UsersAccount},
-    {name:"users.edit",     path:"users/:slug/edit",   component:Telescope.components.UsersAccount}
+    {name:"users.edit",     path:"users/:slug/edit",   component:Telescope.components.UsersAccount},
+    {name:"contact",        path:"contactUs",          component:Telescope.components.}
   ]);
 
   const AppRoutes = {
@@ -27,17 +28,7 @@ Meteor.startup(() => {
     childRoutes: Telescope.routes.routes
   }
 
-  let history;
-
   const clientOptions = {}, serverOptions = {};
-
-  // if (Meteor.isClient) {
-  //   history = useNamedRoutes(useRouterHistory(createBrowserHistory))({ routes: AppRoutes });
-  // }
-
-  // if (Meteor.isServer) {
-  //   history = useNamedRoutes(useRouterHistory(createMemoryHistory))({ routes: AppRoutes });
-  // }
 
   clientOptions.props = {onUpdate: () => {Events.analyticsRequest(); Messages.clearSeen();}};
 
@@ -46,7 +37,6 @@ Meteor.startup(() => {
     return html.replace('<head>', '<head>'+ head.title + head.meta + head.link);    
   }
   
-  // ReactRouterSSR.Run(AppRoutes, {historyHook: () => history}, {historyHook: () => history});
   ReactRouterSSR.Run(AppRoutes, clientOptions, serverOptions);
 
 });
