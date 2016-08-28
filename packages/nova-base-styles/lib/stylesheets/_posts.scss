@@ -86,7 +86,7 @@
   @include medium-large{
     @include flex-center;
   }
-  border-bottom: $border;
+  // border-bottom: $border;
   padding: $vmargin 5px;
   // margin-bottom: 15px;
   &.posts-sticky{
