@@ -34,7 +34,7 @@ class CustomPostsItem extends Telescope.components.PostsItem {
             
             <div className="posts-top">
               <h3 className="posts-item-title">
-                <div className="row">
+                <div>
                   <Link to={Posts.getLink(post)} className="posts-item-title-link" target={Posts.getLinkTarget(post)}>
                     {post.title}
                   </Link>
@@ -47,7 +47,7 @@ class CustomPostsItem extends Telescope.components.PostsItem {
             
             <div className="posts-bottom">
               <div className="posts-item-meta">
-                <div className="row">
+                <div>
                   {post.user? <div className="posts-item-user"><Telescope.components.UsersAvatar user={post.user} size="small"/><Telescope.components.UsersName user={post.user}/></div> : null}
                   <div className="posts-item-date"><FormattedRelative value={post.postedAt}/></div>
                   <div className="posts-item-comments">
@@ -58,8 +58,8 @@ class CustomPostsItem extends Telescope.components.PostsItem {
                 
                   {(this.context.currentUser && this.context.currentUser.isAdmin) ?<Telescope.components.PostsStats post={post} />:null}
                 </div>
-                <div className="row">{this.renderActions()}</div>
-                <div className="row">{this.renderCommenters()}</div>
+                <div>{this.renderActions()}</div>
+                <div>{this.renderCommenters()}</div>
               </div>
             </div>
 
