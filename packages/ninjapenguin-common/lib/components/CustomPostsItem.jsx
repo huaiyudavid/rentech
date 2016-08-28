@@ -13,7 +13,7 @@ class CustomPostsItem extends Telescope.components.PostsItem {
 
     const post = this.props.post;
 
-    let postClass = "posts-item"; 
+    let postClass = "posts-item";
     if (post.sticky) postClass += " posts-sticky";
 
     // ⭐ custom code starts here ⭐
@@ -25,18 +25,18 @@ class CustomPostsItem extends Telescope.components.PostsItem {
     return (
       <div className="col-md-4">
       <div className={postClass}>
-        
+
           <div className="posts-item-vote">
             <Telescope.components.Vote post={post} currentUser={this.context.currentUser}/>
           </div>
 
           <div className="posts-item-content">
-            
+
             <div className="posts-top">
               <h3 className="posts-item-title">
                 <div>
                   <Link to={Posts.getLink(post)} className="posts-item-title-link" target={Posts.getLinkTarget(post)}>
-                    {post.title}
+                    {post.Price}{post.title}
                   </Link>
                   {this.renderCategories()}
                 </div>
@@ -44,7 +44,7 @@ class CustomPostsItem extends Telescope.components.PostsItem {
             </div>
 
             {post.thumbnailUrl ? <Telescope.components.PostsThumbnail post={post}/> : null}
-            
+
             <div className="posts-bottom">
               <div className="posts-item-meta">
                 {post.user? <div className="posts-item-user"><Telescope.components.UsersAvatar user={post.user} size="small"/><Telescope.components.UsersName user={post.user}/></div> : null}
@@ -54,7 +54,7 @@ class CustomPostsItem extends Telescope.components.PostsItem {
                     <FormattedMessage id="comments.count" values={{count: post.commentCount}}/>
                   </Link>
                 </div>
-              
+
                 {(this.context.currentUser && this.context.currentUser.isAdmin) ?<Telescope.components.PostsStats post={post} />:null}
                 <div>
                 <div>{this.renderActions()}</div>
@@ -68,7 +68,7 @@ class CustomPostsItem extends Telescope.components.PostsItem {
     )
   }
 };
-  
+
 CustomPostsItem.propTypes = {
   post: React.PropTypes.object.isRequired
 }
