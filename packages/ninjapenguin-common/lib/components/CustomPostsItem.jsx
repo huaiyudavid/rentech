@@ -23,13 +23,13 @@ class CustomPostsItem extends Telescope.components.PostsItem {
     // ⭐ custom code ends here ⭐
 
     return (
-      <div>
-      <div className="panel panel-default">
-      <div className="panel-body">
-        Testing
-      </div>
-      </div>
       <div className={postClass}>
+
+          <div className="panel panel-default">
+          <div className="panel-body">
+            Testing
+          </div>
+          </div>
         
           <div className="posts-item-vote">
             <Telescope.components.Vote post={post} currentUser={this.context.currentUser}/>
@@ -61,7 +61,6 @@ class CustomPostsItem extends Telescope.components.PostsItem {
           </div>
 
           {this.renderCommenters()}
-      </div>
       </div>
     )
   }
