@@ -13,7 +13,7 @@ const Header = ({currentUser}) => {
 
     <div className="header-wrapper">
 
-      <header className="header"; style = {bodyStyle}>
+      <header className="header" style = {bodyStyle}>
 
         <div className="logo">
           <Telescope.components.Logo logoUrl={logoUrl} siteTitle={siteTitle} />
