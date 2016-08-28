@@ -8,7 +8,7 @@ const Header = ({currentUser}) => {
   const tagline = Telescope.settings.get("tagline");
   var bodyStyle = {
     fontFamily: "century gothic",
-    font-size: 17px
+    fontSize: "11"
   };
   return (
 
