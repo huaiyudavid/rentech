@@ -32,7 +32,6 @@ class CustomPostsItem extends Telescope.components.PostsItem {
 
           <div className="posts-item-content">
             
-            <div className="posts-wrapper">
             <div className="posts-top">
             <h3 className="posts-item-title">
               <Link to={Posts.getLink(post)} className="posts-item-title-link" target={Posts.getLinkTarget(post)}>
@@ -56,7 +55,6 @@ class CustomPostsItem extends Telescope.components.PostsItem {
               {(this.context.currentUser && this.context.currentUser.isAdmin) ?<Telescope.components.PostsStats post={post} />:null}
               {this.renderActions()}
               {this.renderCommenters()}
-            </div>
             </div>
             </div>
 

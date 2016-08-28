@@ -152,6 +152,9 @@
 
 .posts-item-content{
   flex-grow: 1;
+  height: 100%;
+  position: relative;
+  border: solid 1px;
 }
 
 .posts-item-title{
