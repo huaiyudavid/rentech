@@ -62,7 +62,7 @@ Posts.addField({
       editableIf: canEdit,
       join: {
         joinAs: "Price",
-        // collection: () => Categories
+        collection: () => this
       }
     }
   });
