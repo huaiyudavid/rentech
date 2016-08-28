@@ -6,7 +6,7 @@ import { ModalTrigger } from "meteor/nova:core";
 const PostsNewButton = (props, context) => {
 
   const size = context.currentUser ? "large" : "small";
-  const button = <Button className="posts-new-button" bsStyle="primary" background-color: "#20708D"><FormattedMessage id="posts.new_post"/></Button>;
+  const button = <Button className="posts-new-button" bsStyle="primary"><FormattedMessage id="posts.new_post"/></Button>;
   return (
     <ModalTrigger size={size} title={context.intl.formatMessage({id: "posts.new_post"})} component={button}>
       <Telescope.components.PostsNewForm/>
