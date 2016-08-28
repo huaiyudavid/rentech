@@ -12,7 +12,7 @@ const PostsList = ({results, currentUser, hasMore, ready, count, totalCount, loa
     return (
       <div className="posts-list">
         {showHeader ? <Telescope.components.PostsListHeader /> : null}
-        <div className="posts-list-content">
+        <div className="posts-list-content row">
           {results.map(post => <Telescope.components.PostsItem post={post} currentUser={currentUser} key={post._id}/>)}
         </div>
         {hasMore ? (ready ? <Telescope.components.PostsLoadMore loadMore={loadMore} count={count} totalCount={totalCount} /> : <Telescope.components.PostsLoading/>) : <Telescope.components.PostsNoMore/>}
