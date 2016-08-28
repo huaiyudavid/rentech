@@ -89,7 +89,7 @@
   // border-bottom: $border;
   padding: $vmargin 5px;
   min-height: 300px;
-  min-width: 398px;
+  min-width: window.innerWidth/3 -2 + "px";
   // margin-bottom: 15px;
   background: #ffffff;
   // border: 1px solid;
