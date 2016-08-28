@@ -90,8 +90,9 @@
   padding: $vmargin 5px;
   min-height: 300px;
   // margin-bottom: 15px;
-  border: 1px solid transparent;
+  border: 1px solid;
   border-radius: 4px;
+  margin: 10px 10px 10px 10px;
   &.posts-sticky{
     background: $light-yellow;
 
