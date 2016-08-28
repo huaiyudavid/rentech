@@ -22,6 +22,9 @@ class CustomPostsItem extends Telescope.components.PostsItem {
     }
     // ⭐ custom code ends here ⭐
 
+    console.log("price?");
+    console.log(post.Price);
+
     return (
       <div className="col-md-4">
       <div className={postClass}>
