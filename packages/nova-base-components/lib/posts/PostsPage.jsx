@@ -12,8 +12,8 @@ const PostsPage = ({document, currentUser}) => {
       <Telescope.components.HeadTags url={Posts.getLink(post)}  title={post.title} image={post.thumbnailUrl} />
 
       <Telescope.components.PostsItem post={post}/>
-      <h1>test</h1>
       <div className="posts-page-body" dangerouslySetInnerHTML={htmlBody}></div>
+      <h1>Location: {post.Loc}</h1>
 
       {/*<SocialShare url={ Posts.getLink(post) } title={ post.title }/>*/}
 
