@@ -89,7 +89,9 @@
   // border-bottom: $border;
   padding: $vmargin 5px;
   min-height: 300px;
+  min-width: 398px;
   // margin-bottom: 15px;
+  background: #ffffff;
   border: 1px solid;
   border-radius: 8px;
   margin: 5px 5px 5px 5px;
@@ -126,7 +128,7 @@
 
 .posts-item-vote{
   @include small{
-    float: right;    
+    float: right;
   }
   @include medium-large{
     margin-right: $hmargin;
@@ -328,7 +330,7 @@
     &:hover{
       background: inherit;
       color: inherit;
-      border: inherit;      
+      border: inherit;
     }
   }
   .posts-load-more-wrapper{
