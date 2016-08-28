@@ -304,6 +304,7 @@
   }
   .posts-load-more-wrapper{
     @include flex-center;
+    margin: auto;
   }
   .posts-no-results{
     margin-top: $vmargin;
