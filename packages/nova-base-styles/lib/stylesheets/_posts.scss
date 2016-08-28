@@ -88,7 +88,7 @@
   }
   // border-bottom: $border;
   padding: $vmargin 5px;
-  min-height: 560px;
+  min-height: 300px;
   // margin-bottom: 15px;
   &.posts-sticky{
     background: $light-yellow;
@@ -243,7 +243,7 @@
   margin-right: $hmargin;
   img{
     display: block;
-    height: 100px;
+    height: 200px;
     width: auto;
   }
 }
