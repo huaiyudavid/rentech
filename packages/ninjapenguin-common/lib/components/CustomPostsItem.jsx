@@ -28,8 +28,6 @@ class CustomPostsItem extends Telescope.components.PostsItem {
         <div className="posts-item-vote">
           <Telescope.components.Vote post={post} currentUser={this.context.currentUser}/>
         </div>
-        
-        {post.thumbnailUrl ? <Telescope.components.PostsThumbnail post={post}/> : null}
 
         <div className="posts-item-content">
           
@@ -39,6 +37,8 @@ class CustomPostsItem extends Telescope.components.PostsItem {
             </Link>
             {this.renderCategories()}
           </h3>
+
+          {post.thumbnailUrl ? <Telescope.components.PostsThumbnail post={post}/> : null}
           
           <div className="posts-item-meta">
             {post.user? <div className="posts-item-user"><Telescope.components.UsersAvatar user={post.user} size="small"/><Telescope.components.UsersName user={post.user}/></div> : null}
