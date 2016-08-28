@@ -26,13 +26,11 @@ $border: 1px solid $light-border;
 @mixin flex-bottom{
   display: flex;
   align-items: flex-end;
-  vertical-align: bottom;
 }
 
 @mixin flex-top{
   display: flex;
   align-items: flex-start;
-  vertical-align: top;
 }
 
 @mixin border-radius{
