@@ -294,7 +294,6 @@
   .posts-load-more{
     @include flex-center;
     border: none;
-    margin: auto;
     padding: 0;
     &:hover{
       background: inherit;
@@ -304,7 +303,6 @@
   }
   .posts-load-more-wrapper{
     @include flex-center;
-    margin: auto;
   }
   .posts-no-results{
     margin-top: $vmargin;
