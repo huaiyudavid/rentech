@@ -58,7 +58,7 @@ class CustomPostsItem extends Telescope.components.PostsItem {
                 {(this.context.currentUser && this.context.currentUser.isAdmin) ?<Telescope.components.PostsStats post={post} />:null}
                 <div>
                 <div>{this.renderActions()}</div>
-                <div>{this.renderCommenters()}</div>
+                // <div>{this.renderCommenters()}</div>
                 </div>
               </div>
             </div>
