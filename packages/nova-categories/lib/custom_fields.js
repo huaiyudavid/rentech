@@ -44,6 +44,9 @@ Posts.addField({
   fieldSchema: {
     type: Date,
     optional: true
+    publish: true,
+    insertableIf: canInsert,
+    editableIf: canEdit,
   }
 });
 Posts.addField({
