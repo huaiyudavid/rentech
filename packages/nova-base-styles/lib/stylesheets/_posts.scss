@@ -101,12 +101,20 @@
 
 .posts-top{
   @include flex-top;
-  height: 50%;
+  position: absolute;
+  top: 0;
 }
 
 .posts-bottom{
   @include flex-bottom;
-  height: 50%;
+  position: absolute;
+  bottom: 0;
+}
+
+.posts-wrapper{
+  height: 100%;
+  position: relative;
+  border: solid 1px;
 }
 
 .posts-item-vote{
@@ -288,12 +296,16 @@
   .posts-load-more{
     @include flex-center;
     border: none;
-    // padding: 0;
+    margin: auto;
+    padding: 0;
     &:hover{
       background: inherit;
       color: inherit;
       border: inherit;      
     }
+  }
+  .posts-load-more-wrapper{
+    @include flex-center;
   }
   .posts-no-results{
     margin-top: $vmargin;
