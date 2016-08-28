@@ -39,5 +39,12 @@ Posts.addField(
     }
   }
 );
+Posts.addField({
+    fieldName: 'price',
+    fieldSchema: {
+      type: Number,
+      optional: false
+    }
+  });
 
 PublicationUtils.addToFields(Posts.publishedFields.list, ["categories"]);
