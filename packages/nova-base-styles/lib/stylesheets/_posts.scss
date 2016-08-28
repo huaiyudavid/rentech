@@ -110,7 +110,7 @@
 .upvote-button{
   @include border;
   @include border-radius;
-//  @include flex-center;
+  @include flex-center;
   flex-direction: column;
   justify-content: center;
   padding: 3px 5px;
