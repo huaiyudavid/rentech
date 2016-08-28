@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl';
 
 const PostsLoadMore = ({loadMore, count, totalCount}) => {
   return (
-    <div className="col-md-12 posts-load-more-wrapper">
+    <div className="col-md-6 posts-load-more-wrapper">
         <a className="posts-load-more row" onClick={loadMore}>
           <span><FormattedMessage id="posts.load_more"/></span>
           &nbsp;
