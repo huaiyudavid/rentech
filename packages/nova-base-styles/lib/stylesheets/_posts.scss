@@ -101,10 +101,12 @@
 
 .posts-top{
   @include flex-top;
+  height: 50%;
 }
 
 .posts-bottom{
   @include flex-bottom;
+  height: 50%;
 }
 
 .posts-item-vote{
