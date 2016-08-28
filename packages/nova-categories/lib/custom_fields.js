@@ -43,7 +43,7 @@ Posts.addField({
   fieldName: 'scheduledAt',
   fieldSchema: {
     type: Date,
-    optional: true
+    optional: true,
     publish: true,
     insertableIf: canInsert,
     editableIf: canEdit,
@@ -53,7 +53,7 @@ Posts.addField({
     fieldName: 'price',
     fieldSchema: {
       type: Number,
-      optional: false
+      optional: false,
     }
   });
 
