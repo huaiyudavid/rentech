@@ -6,12 +6,14 @@ const Header = ({currentUser}) => {
   const logoUrl = Telescope.settings.get("logoUrl");
   const siteTitle = Telescope.settings.get("title", "Nova");
   const tagline = Telescope.settings.get("tagline");
-
+  var bodyStyle = {
+    fontFamily: "century gothic",
+  };
   return (
 
     <div className="header-wrapper">
 
-      <header className="header">
+      <header className="header"; style = {bodyStyle}>
 
         <div className="logo">
           <Telescope.components.Logo logoUrl={logoUrl} siteTitle={siteTitle} />
