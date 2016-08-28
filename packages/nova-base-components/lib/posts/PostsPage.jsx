@@ -14,6 +14,7 @@ const PostsPage = ({document, currentUser}) => {
       <Telescope.components.PostsItem post={post}/>
       <div className="posts-page-body" dangerouslySetInnerHTML={htmlBody}></div>
       <h1>Location: {post.Loc}</h1>
+      <h1>Rent End: {post.EndDate ? post.EndDate.toUTCString() : "N/A"}</h1>
 
       {/*<SocialShare url={ Posts.getLink(post) } title={ post.title }/>*/}
 
