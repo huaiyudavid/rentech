@@ -22,7 +22,7 @@ class UsersMenu extends Component {
           </Dropdown.Toggle>
           <Dropdown.Menu>
             <LinkContainer to={`/users/${user.telescope.slug}`} /*to={{name: "users.single", params: {slug: user.telescope.slug}}}*/>
-              <MenuItem className="dropdown-item" eventKey="1" style = "color: #00004d"><FormattedMessage id="users.profile"/></MenuItem>
+              <MenuItem className="dropdown-item" eventKey="1"><FormattedMessage id="users.profile"/></MenuItem>
             </LinkContainer>
             <LinkContainer to={`/account`} /*to={{name: "account"}}*/>
               <MenuItem className="dropdown-item" eventKey="2"><FormattedMessage id="users.edit_account"/></MenuItem>
