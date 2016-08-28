@@ -13,7 +13,10 @@ const PostsPage = ({document, currentUser}) => {
 
       <Telescope.components.PostsItem post={post}/>
 
-      <div className="posts-page-body" dangerouslySetInnerHTML={htmlBody}></div>
+      <div className="posts-page-body" dangerouslySetInnerHTML={htmlBody}>
+        <h1>Location: {post.Loc}</h1>
+        <h1>Rent End: {post.EndDate.toUTCString()}</h1>
+      </div>
 
       {/*<SocialShare url={ Posts.getLink(post) } title={ post.title }/>*/}
 
