@@ -40,7 +40,7 @@ Posts.addField(
   }
 );
 Posts.addField({
-  fieldName: 'EndDate',
+  fieldName: 'End Date',
   fieldSchema: {
     type: Date,
     label: 'End Date',
@@ -60,10 +60,14 @@ Posts.addField({
       publish: true,
       insertableIf: canInsert,
       editableIf: canEdit,
+      join: {
+        joinAs: "Price",
+        collection: () => Categories
+      }
     }
   });
   Posts.addField({
-      fieldName: 'Loc',
+      fieldName: 'Location',
       fieldSchema: {
         type: String,
         optional: false,
