@@ -43,6 +43,7 @@ Posts.addField({
   fieldName: 'End Date',
   fieldSchema: {
     type: Date,
+    label: 'End Date',
     optional: true,
     publish: true,
     insertableIf: canInsert,
@@ -54,6 +55,8 @@ Posts.addField({
     fieldSchema: {
       type: Number,
       optional: false,
+      decimal: true,
+      min: 0,
       publish: true,
       insertableIf: canInsert,
       editableIf: canEdit,
