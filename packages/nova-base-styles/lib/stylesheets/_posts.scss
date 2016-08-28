@@ -286,6 +286,7 @@
 .posts-day{
   margin-bottom: $vmargin * 2;
   .posts-load-more{
+    @include flex-center;
     border: none;
     // padding: 0;
     &:hover{
