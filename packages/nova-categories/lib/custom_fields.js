@@ -62,5 +62,17 @@ Posts.addField({
       editableIf: canEdit,
     }
   });
+  Posts.addField({
+      fieldName: 'Location',
+      fieldSchema: {
+        type: String,
+        optional: false,
+        decimal: true,
+        min: 0,
+        publish: true,
+        insertableIf: canInsert,
+        editableIf: canEdit,
+      }
+    });
 
 PublicationUtils.addToFields(Posts.publishedFields.list, ["categories"]);
