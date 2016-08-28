@@ -13,7 +13,7 @@ class CustomPostsItem extends Telescope.components.PostsItem {
 
     const post = this.props.post;
 
-    let postClass = "posts-item col-md-4"; 
+    let postClass = "posts-item"; 
     if (post.sticky) postClass += " posts-sticky";
 
     // ⭐ custom code starts here ⭐
@@ -23,6 +23,7 @@ class CustomPostsItem extends Telescope.components.PostsItem {
     // ⭐ custom code ends here ⭐
 
     return (
+      <div className="col-md-4">
       <div className={postClass}>
         
           <div className="posts-item-vote">
@@ -55,6 +56,7 @@ class CustomPostsItem extends Telescope.components.PostsItem {
           </div>
 
           {this.renderCommenters()}
+      </div>
       </div>
     )
   }
