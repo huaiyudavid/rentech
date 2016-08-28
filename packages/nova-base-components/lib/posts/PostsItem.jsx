@@ -36,7 +36,7 @@ class PostsItem extends Component {
 
     const post = this.props.post;
 
-    let postClass = "posts-item"; 
+    let postClass = "posts-item-single"; 
     if (post.sticky) postClass += " posts-sticky";
 
     // console.log(post)
@@ -51,7 +51,7 @@ class PostsItem extends Component {
         
         {post.thumbnailUrl ? <Telescope.components.PostsThumbnail post={post}/> : null}
 
-        <div className="posts-item-content">
+        <div className="posts-item-content-single">
           
           <h3 className="posts-item-title">
             <Link to={Posts.getLink(post)} className="posts-item-title-link" target={Posts.getLinkTarget(post)}>

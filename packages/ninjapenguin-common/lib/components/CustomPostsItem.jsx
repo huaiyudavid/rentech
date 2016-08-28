@@ -46,7 +46,9 @@ class CustomPostsItem extends Telescope.components.PostsItem {
               </h3>
             </div>
 
-            {post.thumbnailUrl ? <Telescope.components.PostsThumbnail post={post}/> : null}
+            {post.thumbnailUrl ? <a className="posts-thumbnail" href={Posts.getLink(post)} target={Posts.getLinkTarget(post)}>
+                                  <span><img src={Posts.getThumbnailUrl(post)} /></span>
+                                  </a> : null}
 
             <div className="posts-bottom">
               <div className="posts-item-meta">
