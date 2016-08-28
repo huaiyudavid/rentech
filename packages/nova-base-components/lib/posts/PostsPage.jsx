@@ -6,6 +6,11 @@ const PostsPage = ({document, currentUser}) => {
   const post = document;
   const htmlBody = {__html: post.htmlBody};
 
+  var headerStyle = {
+    fontFamily: "century gothic",
+    fontSize: "120%",
+    color: "#004DE6",
+  };
   return (
     <div className="posts-page">
 
@@ -13,8 +18,8 @@ const PostsPage = ({document, currentUser}) => {
 
       <Telescope.components.PostsItem post={post}/>
       <div className="posts-page-body" dangerouslySetInnerHTML={htmlBody}></div>
-      <h1>Location: {post.Loc}</h1>
-      <h1>Rent End: {post.EndDate ? post.EndDate.toUTCString() : "N/A"}</h1>
+      <h1 style = {headerStyle}>Location: {post.Loc}</h1>
+      <h1 style = {headerStyle}>Rent End: {post.EndDate ? post.EndDate.toUTCString() : "N/A"}</h1>
 
       {/*<SocialShare url={ Posts.getLink(post) } title={ post.title }/>*/}
 
