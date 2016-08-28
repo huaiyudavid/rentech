@@ -13,6 +13,8 @@ Telescope.strings.en = {
   "posts.body": "Body",
   "posts.categories": "Categories",
   "posts.thumbnailUrl": "Thumbnail URL",
+  "posts.End Date": "End Date",
+  "posts.Price:": "Price",
   "posts.status": "Status",
   "posts.sticky": "Sticky",
   "posts.load_more": "Load More",
@@ -111,15 +113,15 @@ Telescope.strings.en = {
   "settings.requirePostInvite": "Require Post Invite",
   "settings.requirePostsApproval": "Require Posts Approval",
   "settings.scoreUpdateInterval": "Score Update Interval",
-  
+
   "app.loading": "Loading…",
   "app.404": "Sorry, we couldn't find what you were looking for.",
   "app.powered_by": "Powered by Telescope",
   "app.or": "Or",
 
-  "newsletter": "Newsletter", 
-  "newsletter.subscribe": "Subscribe", 
-  "newsletter.unsubscribe": "Unsubscribe", 
+  "newsletter": "Newsletter",
+  "newsletter.subscribe": "Subscribe",
+  "newsletter.unsubscribe": "Unsubscribe",
   "newsletter.subscribe_prompt": "Subscribe to the newsletter",
   "newsletter.email": "Your email",
   "newsletter.success_message": "Thanks for subscribing!",
