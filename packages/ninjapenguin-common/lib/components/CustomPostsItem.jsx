@@ -43,6 +43,7 @@ class CustomPostsItem extends Telescope.components.PostsItem {
 
             {post.thumbnailUrl ? <Telescope.components.PostsThumbnail post={post}/> : null}
             
+            <div className="posts-bottom">
             <div className="posts-item-meta">
               {post.user? <div className="posts-item-user"><Telescope.components.UsersAvatar user={post.user} size="small"/><Telescope.components.UsersName user={post.user}/></div> : null}
               <div className="posts-item-date"><FormattedRelative value={post.postedAt}/></div>
@@ -53,11 +54,11 @@ class CustomPostsItem extends Telescope.components.PostsItem {
               </div>
               {(this.context.currentUser && this.context.currentUser.isAdmin) ?<Telescope.components.PostsStats post={post} />:null}
               {this.renderActions()}
+              {this.renderCommenters()}
+            </div>
             </div>
 
           </div>
-
-          {this.renderCommenters()}
       </div>
       </div>
     )

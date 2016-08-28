@@ -99,8 +99,12 @@
   }
 }
 
-.posts-wrapper{
-  
+.posts-top{
+  @include flex-top;
+}
+
+.posts-bottom{
+  @include flex-bottom;
 }
 
 .posts-item-vote{
