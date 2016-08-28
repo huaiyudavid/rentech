@@ -7,7 +7,7 @@ import CustomNewsletter from "./components/CustomNewsletter.jsx";
 import CustomPostsItem from "./components/CustomPostsItem.jsx";
 import CustomFooter from "./components/CustomFooter.jsx";
 
-Telescope.components.Logo = CustomLogo;
+// Telescope.components.Logo = CustomLogo;
 Telescope.components.Newsletter = CustomNewsletter;
 Telescope.components.PostsItem = CustomPostsItem;
 
