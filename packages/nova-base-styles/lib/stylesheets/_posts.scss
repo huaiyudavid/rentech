@@ -146,6 +146,7 @@
 
 .posts-item-content{
   flex-grow: 1;
+  @include flex-center;
   height: 290px;
   position: relative;
   border: solid 1px;
