@@ -60,10 +60,7 @@ Posts.addField({
       publish: true,
       insertableIf: canInsert,
       editableIf: canEdit,
-      join: {
-        joinAs: "Price",
-        collection: () => this
-      }
+
     }
   });
   Posts.addField({
