@@ -13,7 +13,7 @@ class CustomPostsItem extends Telescope.components.PostsItem {
 
     const post = this.props.post;
 
-    let postClass = "posts-item col-md-4 panel"; 
+    let postClass = "posts-item col-md-4 panel panel-default"; 
     if (post.sticky) postClass += " posts-sticky";
 
     // ⭐ custom code starts here ⭐
@@ -24,39 +24,40 @@ class CustomPostsItem extends Telescope.components.PostsItem {
 
     return (
       <div className={postClass}>
+        <div className="panel-body">
         
-        <div className="posts-item-vote">
-          <Telescope.components.Vote post={post} currentUser={this.context.currentUser}/>
-        </div>
-
-        <div className="posts-item-content">
-          
-          <h3 className="posts-item-title">
-            <Link to={Posts.getLink(post)} className="posts-item-title-link" target={Posts.getLinkTarget(post)}>
-              {post.title}
-            </Link>
-            {this.renderCategories()}
-          </h3>
-
-          {post.thumbnailUrl ? <Telescope.components.PostsThumbnail post={post}/> : null}
-          
-          <div className="posts-item-meta">
-            {post.user? <div className="posts-item-user"><Telescope.components.UsersAvatar user={post.user} size="small"/><Telescope.components.UsersName user={post.user}/></div> : null}
-            <div className="posts-item-date"><FormattedRelative value={post.postedAt}/></div>
-            <div className="posts-item-comments">
-              <Link to={Posts.getPageUrl(post)}>
-                <FormattedMessage id="comments.count" values={{count: post.commentCount}}/>
-              </Link>
-            </div>
-            {(this.context.currentUser && this.context.currentUser.isAdmin) ?<Telescope.components.PostsStats post={post} />:null}
-            {this.renderActions()}
+          <div className="posts-item-vote">
+            <Telescope.components.Vote post={post} currentUser={this.context.currentUser}/>
           </div>
 
-        </div>
+          <div className="posts-item-content">
+            
+            <h3 className="posts-item-title">
+              <Link to={Posts.getLink(post)} className="posts-item-title-link" target={Posts.getLinkTarget(post)}>
+                {post.title}
+              </Link>
+              {this.renderCategories()}
+            </h3>
 
-        {this.renderCommenters()}
+            {post.thumbnailUrl ? <Telescope.components.PostsThumbnail post={post}/> : null}
+            
+            <div className="posts-item-meta">
+              {post.user? <div className="posts-item-user"><Telescope.components.UsersAvatar user={post.user} size="small"/><Telescope.components.UsersName user={post.user}/></div> : null}
+              <div className="posts-item-date"><FormattedRelative value={post.postedAt}/></div>
+              <div className="posts-item-comments">
+                <Link to={Posts.getPageUrl(post)}>
+                  <FormattedMessage id="comments.count" values={{count: post.commentCount}}/>
+                </Link>
+              </div>
+              {(this.context.currentUser && this.context.currentUser.isAdmin) ?<Telescope.components.PostsStats post={post} />:null}
+              {this.renderActions()}
+            </div>
+
+          </div>
+
+          {this.renderCommenters()}
         
-      
+        </div>
       </div>
     )
   }
