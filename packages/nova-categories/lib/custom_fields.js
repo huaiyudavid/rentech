@@ -40,6 +40,13 @@ Posts.addField(
   }
 );
 Posts.addField({
+  fieldName: 'scheduledAt',
+  fieldSchema: {
+    type: Date,
+    optional: true
+  }
+});
+Posts.addField({
     fieldName: 'price',
     fieldSchema: {
       type: Number,
