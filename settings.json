@@ -12,7 +12,7 @@
     "requirePostsApproval":false,
     "requireViewInvite":false,
     "requirePostInvite":false,
-    "enableNewsletter":true,
+    "enableNewsletter":false,
     "autoSubscribe":false,
     "emailNotifications":true,
     "postInterval": 20,
