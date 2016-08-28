@@ -84,7 +84,7 @@
 
 .posts-item{
   @include medium-large{
-    @include flex-center;
+    @include flex-top;
   }
   // border-bottom: $border;
   padding: $vmargin 5px;
@@ -140,7 +140,7 @@
     margin-bottom: $vmargin/2;
   }
   @include medium-large{
-    @include flex-center;
+    @include flex-top;
     font-size: $larger-font;
     margin-bottom: 5px;
   }
@@ -160,7 +160,7 @@
   @include medium-large{
     margin-left: 5px;
   }
-  @include flex-center;
+  @include flex-top;
   a{
     display: block;
     font-size: $small-font;
@@ -174,7 +174,7 @@
 
 .posts-item-meta{
   @include medium-large{
-    @include flex-center;
+    @include flex-bottom;
   }
   font-size: $small-font;
   .users-avatar{
@@ -189,7 +189,7 @@
   @include small{
     margin-bottom: $vmargin/2;
   }
-  @include flex-center;
+  @include flex-bottom;
 }
 
 .posts-item-date, .posts-item-comments{
@@ -218,14 +218,14 @@
 }
 
 .post-actions{
-  @include flex-center;
+  @include flex-bottom;
 }
 
 .posts-commenters{
   @include small{
     display: none;
   }
-  @include flex-center;
+  @include flex-bottom;
 }
 
 .posts-commenters-avatars{

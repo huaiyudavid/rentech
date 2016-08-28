@@ -23,6 +23,16 @@ $border: 1px solid $light-border;
   align-items: center;
 }
 
+@mixin flex-bottom{
+  display: flex;
+  align-items: flex-end;
+}
+
+@mixin flex-top{
+  display: flex;
+  align-items: flex-start;
+}
+
 @mixin border-radius{
   border-radius: .25rem;
 }
