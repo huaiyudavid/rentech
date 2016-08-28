@@ -2,7 +2,7 @@ import React from 'react';
 import Posts from "meteor/nova:posts";
 
 const PostsPage = ({document, currentUser}) => {
-
+  
   const post = document;
   const htmlBody = {__html: post.htmlBody};
 
@@ -10,9 +10,7 @@ const PostsPage = ({document, currentUser}) => {
     <div className="posts-page">
 
       <Telescope.components.HeadTags url={Posts.getLink(post)} title={post.title} image={post.thumbnailUrl} />
-
-      <Telescope.components.PostsItem price={post.Price}/>
-      <Telescope.components.PostsItem loc={post.Location}/>
+      
       <Telescope.components.PostsItem post={post}/>
 
       <div className="posts-page-body" dangerouslySetInnerHTML={htmlBody}></div>
